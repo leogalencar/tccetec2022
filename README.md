@@ -1,3 +1,3 @@
 Reforma do site da ETEC
 
-Implantação no GitHub: 22/06/2022
+Implantação no GitHub: 24/06/2022
