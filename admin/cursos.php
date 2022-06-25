@@ -2,14 +2,23 @@
 <html>
 
 <head>
-    <title>Cursos</title>
+    <title>ETEC - Cursos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../img/etec.ico">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap2.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
     <style type="text/css">
@@ -20,15 +29,15 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="../img/logo.png" alt="" width="100px">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse navbar-collapse-fg-0" id="navbarCollapse">
                 <div class="navbar-nav justify-content-end">
                     <a class="nav-item nav-link" href="index.php">Home</a>
                     <a class="nav-item nav-link active" href="cursos.php">Cursos</a>
@@ -45,7 +54,7 @@
     </nav>
 
 <!-- NAV !-->
-<div class="container" style="margin-top: 10rem; margin-bottom: 2rem;">
+<div class="container" style="margin-top: 6rem; margin-bottom: 2rem;">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="margin-bottom: 2rem;">
     <div class="container-fluid">
       <a class="navbar-brand" href="javascript:void(0)">Filtros</a>
@@ -82,7 +91,7 @@
   <!-- CARDS CURSOS !-->
   <div class="row mb-4 text-center">
     <div class="col-4 text-wk-center">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="max-width: 18rem;">
         <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
         <div class="card-body">
           <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -91,7 +100,7 @@
       </div>
     </div>
     <div class="col-4 text-wk-center">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="max-width: 18rem;">
         <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
         <div class="card-body">
           <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -100,7 +109,7 @@
       </div>
     </div>
     <div class="col-4 text-wk-center">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="max-width: 18rem;">
         <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
         <div class="card-body">
           <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -111,7 +120,7 @@
   </div>
   <div class="row mb-padrao text-center">
   <div class="col-4 text-wk-center">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="max-width: 18rem;">
         <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
         <div class="card-body">
           <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -120,7 +129,7 @@
       </div>
     </div>
     <div class="col-4 text-wk-center">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="max-width: 18rem;">
         <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
         <div class="card-body">
           <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -129,7 +138,7 @@
       </div>
     </div>
     <div class="col-4 text-wk-center">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="max-width: 18rem;">
         <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
         <div class="card-body">
           <h4 class="card-title">Desenvolvimento de Sistemas</h4>

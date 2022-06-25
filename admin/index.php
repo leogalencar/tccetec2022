@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/bootstrap2.css">
     <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -28,7 +29,7 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="../img/logo.png" alt="" width="100px">
@@ -36,7 +37,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse navbar-collapse-fg-0" id="navbarCollapse">
                 <div class="navbar-nav justify-content-end">
                     <a class="nav-item nav-link active" href="index.php">Home</a>
                     <a class="nav-item nav-link" href="cursos.php">Cursos</a>
