@@ -140,7 +140,7 @@
 
         <div class="row mb-5">
             <div class="col-12">
-                <h2 class="display-5 text-center">O que nossos alunos dizem</h2>
+                <h2 class="display-5 text-center">O que nossos alunos dizem?</h2>
             </div>
         </div>
         <div class="container mt-5 mb-padrao">
