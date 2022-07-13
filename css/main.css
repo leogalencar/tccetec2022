@@ -217,3 +217,21 @@ footer a{
 .box-acesso:hover .icon{
   fill: #fff;
 }
+
+.breadcrumb-link{
+  color: red;
+}
+
+.breadcrumb-link:hover{
+  color: rgb(0, 0, 0) !important;
+}
+
+.title-section::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0 0 0 2px;
+  background: #ff0000;
+  border-radius: 3px;
+}
