@@ -3,36 +3,42 @@ body {
   color: #777;
 }
 
-a{
+a {
   color: black;
 }
 
-footer{
-  background-color: #3E4663;
+footer {
+  background-color: #3e4663;
   padding: 1.5rem;
 }
 
-footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
   color: white;
 }
 
-footer span{
+footer span {
   font-size: 12px;
   padding: 5px;
 }
 
-footer a{
-  color: rgba(255,255,255,.55);
+footer a {
+  color: rgba(255, 255, 255, 0.55);
 }
 
-.footer-links{
+.footer-links {
   height: 73px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.footer-icons{
+.footer-icons {
   margin: 0 5px;
   font-size: 14px;
 }
@@ -77,7 +83,7 @@ footer a{
   transition: 0.3s all ease !important;
 }
 
-.card-avaliacao:hover{
+.card-avaliacao:hover {
   box-shadow: 0 0 10px 1px #00000086;
 }
 
@@ -109,7 +115,7 @@ footer a{
   font-size: 30px;
 }
 
-.cards{
+.cards {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -140,7 +146,7 @@ footer a{
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,7 +160,11 @@ footer a{
 }
 
 .cards-img-overlay-primary {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.342), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.342),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 .cards-img-overlay > * {
@@ -180,11 +190,11 @@ footer a{
   margin-top: 0.25em;
 }
 
-.col-lg-3{
+.col-lg-3 {
   text-align: -webkit-center !important;
 }
 
-.box-acesso{
+.box-acesso, .box-download {
   display: flex !important;
   flex-direction: column;
   margin-bottom: var(--bs-gutter-x);
@@ -196,11 +206,11 @@ footer a{
   justify-content: center;
   background-color: rgba(250, 250, 250, 0.3);
   border: solid 1px whitesmoke;
-  -webkit-transition: background ease-out .2s;
-  transition: background ease-out .2s;
+  -webkit-transition: background ease-out 0.2s;
+  transition: background ease-out 0.2s;
 }
 
-.box-icon{
+.box-icon {
   max-width: 64px;
   max-height: 64px;
   margin-bottom: 10px;
@@ -208,37 +218,37 @@ footer a{
   transition: 0.3s all ease !important;
 }
 
-.icon{
+.icon {
   max-width: 64px;
   max-height: 64px;
-  fill: #3E4663;
+  fill: #3e4663;
   -webkit-transition: 0.3s all ease !important;
   transition: 0.3s all ease !important;
 }
 
-.box-acesso:hover{
-  background-color: #3E4663;
+.box-acesso:hover, .box-download:hover {
+  background-color: #3e4663;
   transform: scale(1.1);
 }
 
-.box-acesso:hover .icon{
+.box-acesso:hover .icon {
   fill: #fff;
 }
 
-.breadcrumb-link{
+.breadcrumb-link {
   color: red;
 }
 
-.breadcrumb-link:hover{
+.breadcrumb-link:hover {
   color: rgb(0, 0, 0) !important;
 }
 
-ol.breadcrumb::before{
+ol.breadcrumb::before {
   content: attr(breadcrumb-msg);
   padding-right: 10px;
 }
 
-.title-section::after{
+.title-section::after {
   content: "";
   display: block;
   width: 30px;
@@ -248,23 +258,56 @@ ol.breadcrumb::before{
   border-radius: 5px;
 }
 
-.subtitle{
-  color: #a3a3a3;;
+.subtitle {
+  color: #a3a3a3;
 }
 
-.info a:hover{
+.info a:hover {
   color: black !important;
 }
 
-.info img{
+.info img {
   max-width: 100%;
   display: block;
 }
 
-.legenda{
+.legenda {
   margin-top: 30px;
 }
 
-.legenda h6{
+.legenda h6 {
   color: #b90000;
+}
+
+.calendario {
+  border: 0px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px #767676;
+}
+
+.calendario-img{
+  max-width: 75%;
+}
+
+@media (max-width: 767.98px) {
+  .calendario-img {
+    max-width: 100%;
+  }
+  .box-download{
+    max-width: 100% !important;
+  }
+}
+
+.box-download{
+  display: block !important;
+  max-width: 75%;
+  height: auto;
+}
+
+.box-download:hover{
+  transform: scale(1.01);
+}
+
+.tab-content:focus-visible, .tab-pane:focus-visible{
+  outline: none;
 }
