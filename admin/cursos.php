@@ -32,7 +32,7 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-etec sticky-top mb-5">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-etec sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="../img/logo.png" alt="" width="100px">
@@ -57,9 +57,10 @@
     </nav>
 
     <!-- NAV !-->
-    <div class="container mb-2">
+    <div class="container mb-2 mt-5">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-5">
+            
+            <ol class="breadcrumb mb-5" breadcrumb-msg="Você está em:">
                 <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Página Inicial</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Cursos</li>
             </ol>

@@ -1,0 +1,31 @@
+.border-right{
+    padding-right: 6rem !important;
+    border-right: 1px solid #dee2e6!important;
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+}
+
+.form-control:focus{
+    border-color: black;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}
+
+.form-control.is-invalid{
+    border-bottom: 1px solid #dc3545;
+}
+
+.form-control.is-invalid:focus{
+    box-shadow: none;
+    border-bottom: 1px solid #dc3545;
+}
+
+.mensagem{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+

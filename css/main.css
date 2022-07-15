@@ -73,6 +73,12 @@ footer a{
   color: #000;
   border: solid 2px #63636386;
   border-radius: 20px !important;
+  -webkit-transition: 0.3s all ease !important;
+  transition: 0.3s all ease !important;
+}
+
+.card-avaliacao:hover{
+  box-shadow: 0 0 10px 1px #00000086;
 }
 
 .col-md-4 {
@@ -212,6 +218,7 @@ footer a{
 
 .box-acesso:hover{
   background-color: #3E4663;
+  transform: scale(1.1);
 }
 
 .box-acesso:hover .icon{
@@ -226,12 +233,38 @@ footer a{
   color: rgb(0, 0, 0) !important;
 }
 
+ol.breadcrumb::before{
+  content: attr(breadcrumb-msg);
+  padding-right: 10px;
+}
+
 .title-section::after{
   content: "";
   display: block;
-  width: 40px;
-  height: 3px;
-  margin: 0 0 0 2px;
-  background: #ff0000;
-  border-radius: 3px;
+  width: 30px;
+  height: 4px;
+  margin: 10px 0 0 2px;
+  background: #b90000;
+  border-radius: 5px;
+}
+
+.subtitle{
+  color: #a3a3a3;;
+}
+
+.info a:hover{
+  color: black !important;
+}
+
+.info img{
+  max-width: 100%;
+  display: block;
+}
+
+.legenda{
+  margin-top: 30px;
+}
+
+.legenda h6{
+  color: #b90000;
 }
