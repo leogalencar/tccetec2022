@@ -12,7 +12,7 @@ a:hover {
   color: #fff !important;
 }
 
-a:hover:before {
+a.nav-transform:hover:before {
   -webkit-transform: scale(1) !important;
   -ms-transform: scale(1) !important;
   transform: scale(1) !important;

@@ -22,20 +22,19 @@ footer h6 {
   color: white;
 }
 
-footer span {
+footer li {
   font-size: 12px;
   padding: 5px;
 }
 
 footer a {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.55) !important;
 }
 
 .footer-links {
-  height: 73px;
   display: flex;
+  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .footer-icons {
