@@ -1,6 +1,13 @@
+html {
+  height: 100%;
+}
+
 body {
   font: 400 15px/1.8 Lato, sans-serif;
   color: #777;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 a {
@@ -10,6 +17,7 @@ a {
 footer {
   background-color: #3e4663;
   padding: 1.5rem;
+  margin-top: auto;
 }
 
 footer p,
@@ -193,7 +201,8 @@ footer a {
   text-align: -webkit-center !important;
 }
 
-.box-acesso, .box-download {
+.box-acesso,
+.box-download {
   display: flex !important;
   flex-direction: column;
   margin-bottom: var(--bs-gutter-x);
@@ -225,7 +234,8 @@ footer a {
   transition: 0.3s all ease !important;
 }
 
-.box-acesso:hover, .box-download:hover {
+.box-acesso:hover,
+.box-download:hover {
   background-color: #3e4663;
   transform: scale(1.1);
 }
@@ -284,7 +294,7 @@ ol.breadcrumb::before {
   box-shadow: 0 0 10px 1px #767676;
 }
 
-.calendario-img{
+.calendario-img {
   max-width: 75%;
 }
 
@@ -292,21 +302,28 @@ ol.breadcrumb::before {
   .calendario-img {
     max-width: 100%;
   }
-  .box-download{
+  .box-download {
     max-width: 100% !important;
   }
 }
 
-.box-download{
+.box-download {
   display: block !important;
   max-width: 75%;
   height: auto;
 }
 
-.box-download:hover{
+.box-download:hover {
   transform: scale(1.01);
 }
 
-.tab-content:focus-visible, .tab-pane:focus-visible{
+.tab-content:focus-visible,
+.tab-pane:focus-visible {
   outline: none;
+}
+
+@media (min-width: 767.98px) {
+  .border-md-end {
+    border-right: 1px solid #dee2e6 !important;
+  }
 }

@@ -75,27 +75,27 @@
                 </h5>
                 <div class="row">
                     <div class="col-md-7">
-                        <form id="formcontato" action="" class="pe-5 mb-5 border-end" data-sb-form-api-token="API_TOKEN">
+                        <form id="formcontato" action="" class="pe-md-5 mb-5 border-md-end" data-sb-form-api-token="API_TOKEN">
                             <div class="row mb-3">
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <label for="nome">Nome</label>
                                     <input type="text" class="form-control" name="nome" id="nome" data-sb-validations="required">
                                     <div class="invalid-feedback" data-sb-feedback="nome:required">Por favor, digite seu nome.</div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <label for="assunto">Assunto</label>
                                     <input type="text" class="form-control" name="assunto" id="assunto" aria-required="true" data-sb-validations="required">
                                     <div class="invalid-feedback" data-sb-feedback="assunto:required">Por favor, digite o assunto da mensagem.</div>
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <label for="email">E-mail</label>
                                     <input type="text" class="form-control" name="email" id="email" aria-required="true" data-sb-validations="required, email">
                                     <div class="invalid-feedback" data-sb-feedback="email:required">Por favor, digite seu e-mail.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">O endereço de e-mail inserido não é válido.</div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <label for="telefone">Telefone</label>
                                     <input type="text" class="form-control" name="telefone" id="telefone" aria-required="true" data-sb-validations="required">
                                     <div class="invalid-feedback" data-sb-feedback="telefone:required">Por favor, digite seu telefone.</div>
