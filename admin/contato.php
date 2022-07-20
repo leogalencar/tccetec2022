@@ -36,23 +36,29 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-etec sticky-top">
         <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <a class="navbar-brand" href="index.php">
                 <img src="../img/logo.png" alt="" width="100px">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navbar-collapse-fg-0" id="navbarCollapse">
-                <div class="navbar-nav justify-content-end">
-                    <a class="nav-item nav-link nav-transform" href="index.php">Home</a>
-                    <a class="nav-item nav-link nav-transform" href="cursos.php">Cursos</a>
-                    <a class="nav-item nav-link nav-transform" href="http://etecitu.com.br/2020/" target="_blank">EPA Virtual</a>
-                    <a class="nav-item nav-link nav-transform" href="noticias.php">Notícias</a>
-                    <a class="nav-item nav-link nav-transform" href="processoseletivo.php">Processo Seletivo</a>
-                    <a class="nav-item nav-link nav-transform" href="vestibulinho.php">Vestibulinho</a>
-                    <a class="nav-item nav-link nav-transform" href="calendario.php">Calendário</a>
-                    <a class="nav-item nav-link nav-transform" href="planoescolar.php">Plano Escolar</a>
-                    <a class="nav-item nav-link nav-transform active" href="contato.php">Contato</a>
+            <div class="offcanvas offcanvas-start navbar-dark bg-etec" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbar2Label">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link nav-transform" href="index.php">Home</a>
+                        <a class="nav-item nav-link nav-transform" href="cursos.php">Cursos</a>
+                        <a class="nav-item nav-link nav-transform" href="http://etecitu.com.br/2020/" target="_blank">EPA Virtual</a>
+                        <a class="nav-item nav-link nav-transform" href="noticias.php">Notícias</a>
+                        <a class="nav-item nav-link nav-transform" href="processoseletivo.php">Processo Seletivo</a>
+                        <a class="nav-item nav-link nav-transform" href="vestibulinho.php">Vestibulinho</a>
+                        <a class="nav-item nav-link nav-transform" href="calendario.php">Calendário</a>
+                        <a class="nav-item nav-link nav-transform" href="planoescolar.php">Plano Escolar</a>
+                        <a class="nav-item nav-link nav-transform active" href="contato.php">Contato</a>
+                    </div>
                 </div>
             </div>
         </div>
