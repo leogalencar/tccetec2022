@@ -19,7 +19,7 @@ a.nav-transform:hover:before {
 }
 
 .navbar > .container{
-  height: 74px;
+  min-height: 74px;
 }
 
 .bg-etec{
