@@ -18,12 +18,12 @@ a.nav-transform:hover:before {
   transform: scale(1) !important;
 }
 
-.navbar > .container{
+.navbar > .container {
   min-height: 74px;
 }
 
-.bg-etec{
-  background-color: #3E4663;
+.bg-etec {
+  background-color: #213f5c;
 }
 
 .nav-link:before {
@@ -40,4 +40,15 @@ a.nav-transform:hover:before {
   -o-transition: 0.3s transform ease !important;
   transition: 0.3s transform ease !important;
   background: #fff;
+}
+
+@media (max-width: 1024px) {
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: calc(50% - 49px);
+  }
+}
+
+.nav-shadow{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }

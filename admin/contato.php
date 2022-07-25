@@ -51,10 +51,14 @@
             </nav>
 
             <section class="conteudo">
-                <h1 class="title-section mb-3">Contato</h1>
-                <h5 class="subtitle mb-5">
-                    Dúvidas? Entre em contato conosco preenchendo o formulário abaixo.
-                </h5>
+
+                <section class="title mb-5">
+                    <h1 class="title-section mb-3">Contato</h1>
+                    <h5 class="subtitle">
+                        Dúvidas? Entre em contato conosco preenchendo o formulário abaixo.
+                    </h5>
+                </section>
+
                 <div class="row">
                     <div class="col-md-7">
                         <form id="formcontato" action="" class="pe-md-5 mb-5 border-md-end" data-sb-form-api-token="API_TOKEN">
@@ -132,6 +136,7 @@
                         </div>
                     </div>
                 </div>
+                
             </section>
 
         </div>

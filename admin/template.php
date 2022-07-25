@@ -49,10 +49,13 @@
             </nav>
 
             <section class="conteudo">
-                <h1 class="title-section mb-3">Página Atual</h1>
-                <h5 class="subtitle mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h5>
+
+                <section class="title mb-5">
+                    <h1 class="title-section mb-3">Página Atual</h1>
+                    <h5 class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h5>
+                </section>
 
                 <div class="row">
                     <div class="col-12">
@@ -67,6 +70,7 @@
                         Sed ut congue sem. Pellentesque ultricies egestas dapibus. Maecenas eu lectus faucibus risus tempor laoreet. Duis efficitur dolor eu ante venenatis posuere. Vivamus nec iaculis ante. In enim est, facilisis a gravida et, sollicitudin ac mauris. Morbi finibus elementum quam, ac pharetra tellus gravida eu. Curabitur lobortis mollis leo eu lacinia. Nunc cursus diam convallis libero fringilla, ac pellentesque lorem sodales. Praesent semper dapibus quam, sit amet faucibus nisl imperdiet ac. Etiam pharetra turpis tincidunt tortor dictum faucibus. Sed non enim aliquet, cursus est non, condimentum dui. Cras et tristique mauris, a consequat enim. Sed pellentesque neque quis ex egestas cursus.
                     </div>
                 </div><!-- /.row -->
+
             </section>
 
         </div>

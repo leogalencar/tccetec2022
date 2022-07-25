@@ -153,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-4 mt-md-0">
                         <div class="card-avaliacao rounded">
                             <div class="ratings mb-4">
                                 <i class="fa fa-star"></i>
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-4 mt-md-0">
                         <div class="card-avaliacao rounded">
                             <div class="ratings mb-4">
                                 <i class="fa fa-star"></i>

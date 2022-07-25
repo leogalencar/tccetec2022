@@ -30,9 +30,9 @@
 
 </head>
 
-<?php $title = 'Vestibulinho'; ?>
+<?php $title = 'Notícias'; ?>
 <?php $metaTags = 'tag1 tag2'; ?>
-<?php $currentPage = 'vestibulinho.php'; ?>
+<?php $currentPage = 'noticias.php'; ?>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -44,19 +44,31 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-5" breadcrumb-msg="Você está em:">
                     <li class="breadcrumb-item"><a href="index.php" class="breadcrumb-link">Página Inicial</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Vestibulinho</li>
+                    <li class="breadcrumb-item"><a href="noticias.php" class="breadcrumb-link">Notícias</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">ID Notícia</li>
                 </ol>
             </nav>
 
             <section class="conteudo">
 
                 <section class="title mb-5">
-                    <h1 class="title-section mb-3">Vestibulinho</h1>
+                    <h1 class="title-section mb-3 text-uppercase">ID Notícia</h1>
                     <h5 class="subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </h5>
+                    <span>DD/MM/YY</span>
                 </section>
 
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <div class="noticias-img">
+                            <img class="w-50" src="../img/teste.jpg" alt="">
+                        </div>
+                        <div class="noticias-img-legenda">
+                            <span>Cras condimentum sem in dui feugiat malesuada — Foto: Reprodução / Etec Martinho di Ciero</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in faucibus quam. Ut sollicitudin quam tristique tortor tristique accumsan. Aenean facilisis lorem nec nulla imperdiet aliquet. Fusce eget enim ut nibh egestas imperdiet et nec diam. Duis mattis consequat risus ac blandit. Aliquam ultrices metus porta feugiat luctus. Etiam sed tortor varius, porttitor ante nec, sagittis tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras condimentum sem in dui feugiat malesuada.
@@ -70,7 +82,7 @@
                         Sed ut congue sem. Pellentesque ultricies egestas dapibus. Maecenas eu lectus faucibus risus tempor laoreet. Duis efficitur dolor eu ante venenatis posuere. Vivamus nec iaculis ante. In enim est, facilisis a gravida et, sollicitudin ac mauris. Morbi finibus elementum quam, ac pharetra tellus gravida eu. Curabitur lobortis mollis leo eu lacinia. Nunc cursus diam convallis libero fringilla, ac pellentesque lorem sodales. Praesent semper dapibus quam, sit amet faucibus nisl imperdiet ac. Etiam pharetra turpis tincidunt tortor dictum faucibus. Sed non enim aliquet, cursus est non, condimentum dui. Cras et tristique mauris, a consequat enim. Sed pellentesque neque quis ex egestas cursus.
                     </div>
                 </div><!-- /.row -->
-                
+
             </section>
 
         </div>

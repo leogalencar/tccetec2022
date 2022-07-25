@@ -22,7 +22,7 @@
                             <a class="nav-link px-2" href="secretariaacademica.php">Secretaria Acadêmica</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-2" href="planogestao.php">Plano Plurianual de Gestão</a>
+                            <a class="nav-link px-2" href="planoescolar.php">Plano Plurianual de Gestão</a>
                         </li>
                     </ul>
                 </div>

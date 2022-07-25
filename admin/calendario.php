@@ -49,10 +49,13 @@
             </nav>
 
             <section class="conteudo">
-                <h1 class="title-section mb-3">Calendário</h1>
-                <h5 class="subtitle mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h5>
+
+                <section class="title mb-5">
+                    <h1 class="title-section mb-3">Calendário</h1>
+                    <h5 class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h5>
+                </section>
 
                 <div class="row">
                     <div class="col-md-12">
@@ -92,6 +95,7 @@
                         </div>
                     </div>
                 </div><!-- /.row -->
+                
             </section>
 
         </div>
