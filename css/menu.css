@@ -42,7 +42,7 @@ a.nav-transform:hover:before {
   background: #fff;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991.98px) {
   .navbar-brand {
     margin-left: auto;
     margin-right: calc(50% - 49px);

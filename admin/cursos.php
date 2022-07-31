@@ -57,44 +57,40 @@
                     </h5>
                 </section>
 
-                <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="margin-bottom: 2rem;">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="javascript:void(0)">Filtros</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="mynavbar">
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item" style="margin-right: 20px">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Modalidade - Período</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </li>
-                                <li class="nav-item">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Área (Eixo Tecnológico)</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="text" placeholder="Pesquisar">
-                                <button class="btn btn-primary" type="button">Pesquisar</button>
-                            </form>
+                <div class="form bg-etec mb-5">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Modalidade - Período</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mt-3 mt-md-0">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Área (Eixo Tecnológico)</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mt-3 mt-md-0">
+                                <input class="form-control" type="text" placeholder="Curso, período, área etc">
+                            </div>
+                            <div class="col-md-3 mt-3 mt-md-0 text-center">
+                                <button class="btn btn-danger" type="button">Pesquisar</button>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </form>
+                </div>
 
                 <!-- CARDS CURSOS !-->
                 <section id="cursos">
-                    <div class="row mb-4 text-center">
-                        <div class="col-4 text-wk-center">
-                            <div class="card" style="max-width: 18rem;">
+                    <div class="row text-center">
+                        <div class="col-md-3 text-wk-center">
+                            <div class="card">
                                 <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
                                 <div class="card-body">
                                     <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -102,8 +98,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 text-wk-center">
-                            <div class="card" style="max-width: 18rem;">
+                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
+                            <div class="card">
                                 <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
                                 <div class="card-body">
                                     <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -111,8 +107,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 text-wk-center">
-                            <div class="card" style="max-width: 18rem;">
+                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
+                            <div class="card">
+                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
+                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
+                            <div class="card">
                                 <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
                                 <div class="card-body">
                                     <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -121,9 +126,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-padrao text-center">
-                        <div class="col-4 text-wk-center">
-                            <div class="card" style="max-width: 18rem;">
+                    <div class="row mt-md-4 mb-padrao text-center">
+                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
+                            <div class="card">
                                 <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
                                 <div class="card-body">
                                     <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -131,8 +136,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 text-wk-center">
-                            <div class="card" style="max-width: 18rem;">
+                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
+                            <div class="card">
                                 <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
                                 <div class="card-body">
                                     <h4 class="card-title">Desenvolvimento de Sistemas</h4>
@@ -140,8 +145,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 text-wk-center">
-                            <div class="card" style="max-width: 18rem;">
+                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
+                            <div class="card">
+                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
+                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
+                            <div class="card">
                                 <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
                                 <div class="card-body">
                                     <h4 class="card-title">Desenvolvimento de Sistemas</h4>

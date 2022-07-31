@@ -115,7 +115,10 @@
             <div class="row featurette mb-padrao">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Por que estudar <span class="text-muted">na Etec é diferente?</span></h2>
-                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                    <p class="lead fw-light">
+                        Sabendo que o mercado profissional exige cada vez mais <b class="fw-bold">conhecimento e preparo</b>, temos por diferencial oferecer cursos técnicos e profissionalizantes integrados ao Ensino Médio, permitindo assim que o jovem estudante esteja um passo a frente de seus concorrentes quando iniciar sua carreira. <br>
+                        Temos um compromisso com a formação de nossos alunos, portanto, oferecemos cursos atualizados e que abrem espaço para que os estudantes desenvolvam suas habilidades. Entendemos que o ensino vai muito além da teoria, sendo assim, oferecemos recursos e tecnologias para que os estudantes desenvolvam habilidades práticas, possibilitando um <b class="fw-bold">melhor aprendizado</b>.
+                    </p>
                 </div>
                 <div class="col-md-5">
                     <img src="https://colegioprudente.com.br/novo/wp-content/uploads/2021/12/home-info3.jpg" alt="" style="max-width: 100%;">

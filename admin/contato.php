@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -61,7 +63,7 @@
 
                 <div class="row">
                     <div class="col-md-7">
-                        <form id="formcontato" action="" class="pe-md-5 mb-5 border-md-end" data-sb-form-api-token="API_TOKEN">
+                        <form id="formcontato" action="email.php" class="pe-md-5 mb-5 border-md-end" data-sb-form-api-token="API_TOKEN" method="POST">
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="nome">Nome</label>
@@ -136,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </section>
 
         </div>

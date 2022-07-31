@@ -346,3 +346,20 @@ ol.breadcrumb::before {
 .title-noticias:hover{
   color: #b90000 !important;
 }
+
+.nav-link{
+  color: #dc3545;
+}
+
+.nav-link:hover{
+  color: #b40909;
+}
+
+.form{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form select{
+  width: 100%;
+}
