@@ -30,31 +30,13 @@
 
 </head>
 
+<?php $title = 'Processo Seletivo'; ?>
+<?php $metaTags = 'tag1 tag2'; ?>
+<?php $currentPage = 'processoseletivo.php'; ?>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-etec sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">
-                <img src="../img/logo.png" alt="" width="100px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navbar-collapse-fg-0" id="navbarCollapse">
-                <div class="navbar-nav justify-content-end">
-                    <a class="nav-item nav-link nav-transform" href="index.php">Home</a>
-                    <a class="nav-item nav-link nav-transform" href="cursos.php">Cursos</a>
-                    <a class="nav-item nav-link nav-transform" href="http://etecitu.com.br/2020/" target="_blank">EPA Virtual</a>
-                    <a class="nav-item nav-link nav-transform" href="noticias.php">Notícias</a>
-                    <a class="nav-item nav-link nav-transform active" href="processoseletivo.php">Processo Seletivo</a>
-                    <a class="nav-item nav-link nav-transform" href="vestibulinho.php">Vestibulinho</a>
-                    <a class="nav-item nav-link nav-transform" href="calendario.php">Calendário</a>
-                    <a class="nav-item nav-link nav-transform" href="planoescolar.php">Plano Escolar</a>
-                    <a class="nav-item nav-link nav-transform" href="contato.php">Contato</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php require_once('navbar.php'); ?>
 
     <!-- CONTEÚDO !-->
     <main>
@@ -67,10 +49,13 @@
             </nav>
 
             <section class="conteudo">
-                <h1 class="title-section mb-3">Processo Seletivo</h1>
-                <h5 class="subtitle mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h5>
+
+                <section class="title mb-5">
+                    <h1 class="title-section mb-3">Processo Seletivo</h1>
+                    <h5 class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h5>
+                </section>
 
                 <div class="row">
                     <div class="col-12">
@@ -85,69 +70,14 @@
                         Sed ut congue sem. Pellentesque ultricies egestas dapibus. Maecenas eu lectus faucibus risus tempor laoreet. Duis efficitur dolor eu ante venenatis posuere. Vivamus nec iaculis ante. In enim est, facilisis a gravida et, sollicitudin ac mauris. Morbi finibus elementum quam, ac pharetra tellus gravida eu. Curabitur lobortis mollis leo eu lacinia. Nunc cursus diam convallis libero fringilla, ac pellentesque lorem sodales. Praesent semper dapibus quam, sit amet faucibus nisl imperdiet ac. Etiam pharetra turpis tincidunt tortor dictum faucibus. Sed non enim aliquet, cursus est non, condimentum dui. Cras et tristique mauris, a consequat enim. Sed pellentesque neque quis ex egestas cursus.
                     </div>
                 </div><!-- /.row -->
+                
             </section>
 
         </div>
     </main>
 
     <!-- FOOTER !-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 d-flex">
-                    <ul class="nav footer-links justify-content-center justify-content-md-between">
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="contato.php">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="https://www.vestibulinhoetec.com.br/home/">Vestibulinho</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="processoseletivo.php">Processo Seletivo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="https://nsa.cps.sp.gov.br/">NSA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="http://www.etecitu.com.br/2019/arquivos/index/manualTCC.pdf">Manual do TCC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="secretariaacademica.php">Secretaria Acadêmica</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="planogestao.php">Plano Plurianual de Gestão</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="nav footer-links justify-content-center justify-content-md-end">
-                        <li>
-                            <a class="nav-link px-2" href="https://www.facebook.com/EtecdeItu" class="footer-icons" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a class="nav-link px-2" href="https://www.instagram.com/etecmartinho/" class="footer-icons" target="_blank">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                            <a class="nav-link px-2" href="https://www.youtube.com/channel/UCgiX2_tK8Imaf5OpcQNK-yA" class="footer-icons" target="_blank">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr style="color: #252a3c; margin: 1rem 0;">
-
-            <div class="row align-items-center">
-                <div class="col-md-9 text-center text-md-start">
-                    <p>Copyright © 2022 - Etec Martinho di Ciero - Centro Paula Souza - Avenida Barata Ribeiro, 410 Vila Prudente de Moraes - Itu/SP</p>
-                </div>
-                <div class="col-md-3 text-center text-md-end">
-                    <img src="../img/logo.png" alt="" class="mb-2" style="width: 80px;">
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include_once 'footer.php' ?>
 
 
 
