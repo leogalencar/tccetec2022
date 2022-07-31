@@ -363,3 +363,10 @@ ol.breadcrumb::before {
 .form select{
   width: 100%;
 }
+
+.form-login{
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 13px -10px;
+}
