@@ -1,31 +1,52 @@
 <?php
 
-if (isset($_POST['email']) && !empty($_POST['email'])) {
-    $nome = addslashes($_POST['nome']);
-    $assunto = addslashes($_POST['assunto']);
-    $email = addslashes($_POST['email']);
-    $telefone = addslashes($_POST['telefone']);
-    $mensagem = addslashes($_POST['mensagem']);
+date_default_timezone_set('America/Sao_Paulo');
 
-    $to = 'mamacosovietico@gmail.com';
-    $subject = '[Contato] ' . $assunto;
-    $body = "
-        <html>
-            <p><b>Nome: </b>{$nome}</p>
-            <p><b>Email: </b>{$email}</p>
-            <p><b>Telefone: </b>{$telefone}</p>
-            <p><b>Mensagem:</b></p>
-            <p>{$mensagem}</p>
-        </html>
-    ";
+require_once('../src/PHPMailer.php');
+require_once('../src/SMTP.php');
+require_once('../src/Exception.php');
 
-    $header = "From: $nome <$email> \r\n";
-    $header .= "MIME-Version: 1.0\r\n";
-    $header .= "Content-type: text/html; charset=iso-8859-1\r\n";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-    if (mail($to, $subject, $body, $header)) {
-        echo 'E-mail enviado com sucesso';
+
+
+if ((isset($_POST['email']) && !empty(trim($_POST['email']))) && (isset($_POST['mensagem']) && !empty(trim($_POST['mensagem'])))) {
+
+    $nome = !empty($_POST['nome']) ? $_POST['nome'] : 'Não informado';
+    $email = $_POST['email'];
+    $telefone = !empty($_POST['telefone']) ? $_POST['telefone'] : 'Não informado';
+    $assunto = !empty($_POST['assunto']) ? utf8_decode($_POST['assunto']) : 'Não informado';
+    $mensagem = $_POST['mensagem'];
+    $data = date('d/m/Y H:i:s');
+
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'mamacosovietico@gmail.com';
+    $mail->Password = 'nikdaugzpswnqqeb';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
+    $mail->Port = 465;
+
+    $mail->setFrom($email, $nome);
+    $mail->addAddress('mamacosovietico@gmail.com');
+
+    $mail->isHTML(true);
+    $mail->Subject = $assunto;
+    $mail->Body = "<b>Nome:</b> {$nome}<br>
+                    <b>Email: </b>{$email}<br>
+                    <b>Telefone:</b> {$telefone}<br>
+                    <b>Data/hora:</b> {$data}<br><br>
+                    <b>Mensagem:</b><br>{$mensagem}";
+    $mail->AltBody = 'Corpo do email';
+
+    if ($mail->send()) {
+        echo 'Email enviado com sucesso.';
     } else {
-        echo 'Erro';
+        echo "Email não enviado. Erro: {$mail->ErrorInfo}";
     }
+} else {
+    echo 'Email não enviado: informar o email e a mensagem.';
 }
