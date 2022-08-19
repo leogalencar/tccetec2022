@@ -6,6 +6,7 @@ include('conectar.php');
 
 if (empty($_POST['usuario']) || empty($_POST['senha'])) {
     header('Location: login.php');
+    $_SESSION['nao_autenticado'] = true; //testar
     exit();
 }
 

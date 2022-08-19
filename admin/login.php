@@ -46,7 +46,15 @@ if (isset($_SESSION['usuario'])) {
 
 <body class="bg-light" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <?php require_once('../public/navbar.php'); ?>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-etec fixed-top nav-shadow">
+            <div class="container justify-content-center">
+                <a href="../public/index.php">
+                    <img src="../img/logo.png" alt="" width="100px">
+                </a>
+            </div>
+        </nav>
+    </header>
 
     <!-- CONTEÚDO !-->
     <main class="m-auto w-100">
