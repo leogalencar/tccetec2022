@@ -57,8 +57,8 @@ include('verificar_login.php');
     <!-- CONTEÚDO !-->
     <main>
         <div class="container mb-padrao mt-5">
-            <div class="row mb-4 p-4">
-                <section class="title mb-5">
+            <div class="row p-4">
+                <section class="title mb-3">
                     <h1 class="title-section mb-3">Bem vindo, <?php echo $_SESSION['usuario']; ?></h1>
                     <h5 class="subtitle">
                         Página de administração.
@@ -69,9 +69,15 @@ include('verificar_login.php');
                 <div class="col-md-4 pe-md-4">
                     <nav id="navbar-example3" class="flex-column align-items-stretch bg-etec rounded h-100" style="min-height: 500px;">
                         <nav class="nav nav-pills flex-column justify-content-evenly text-center h-100">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <img class="w-100 p-1" src="../img/teste.jpg" alt="">
+                                    <h7 class="text-light m-1"><?php echo $_SESSION['usuario']; ?></h7>
+                                </div>
+                            </div>
                             <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'pagina-principal') ? ' active' : '') ?>" href="?p=pagina-principal">Página Inicial</a>
                             <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'cursos') ? ' active' : '') ?>" href="?p=cursos">Cursos</a>
-                            <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'noticias') ? ' active' : '') ?>" href="?p=noticias">Notícias</a>
+                            <a class="nav-link nav-link-sidebar<?php echo ((strpos($actual_link, "noticias") !== false) ? ' active' : '') ?>" href="?p=noticias/consultar">Notícias</a>
                             <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'calendario') ? ' active' : '') ?>" href="?p=calendario">Calendário</a>
                             <a type="button" class="nav-link nav-link-sidebar" data-bs-toggle="modal" data-bs-target="#myModal">
                                 Sair
@@ -93,8 +99,14 @@ include('verificar_login.php');
 
                                         <!-- Modal footer -->
                                         <div class="modal-footer">
-                                            <a class="nav-link" href="logout.php"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sair</button></a>
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                            <div class="col-md-2">
+                                                <a class="nav-link w-100 p-0 pe-2" href="logout.php"><button type="button" class="btn btn-danger w-100" data-bs-dismiss="modal">Sair</button></a>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+
                                         </div>
 
                                     </div>

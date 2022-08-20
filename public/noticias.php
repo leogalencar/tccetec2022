@@ -1,3 +1,10 @@
+<?php
+include_once '../class/Noticia.php';
+include_once 'CalcularTempo.php';
+$noticia = new Noticia();
+$dados = $noticia->consultar();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -34,6 +41,8 @@
 <?php $metaTags = 'tag1 tag2'; ?>
 <?php $currentPage = 'noticias.php'; ?>
 
+
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <?php require_once('navbar.php'); ?>
@@ -58,22 +67,28 @@
                 </section>
 
                 <section class="noticias">
-                    <div class="box-noticias">
-                        <div class="row">
-                            <div class="col-md-4 mb-5 mb-md-0">
-                                <a class="w-100" href=""><img class="img-noticias" src="../img/teste.jpg" alt=""></a>
-                            </div>
-                            <div class="col-md-8">
-                                <a class="title-noticias" href="">
-                                    <h4 class="mb-3">Título da Notícia</h4>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed eros libero. Pellentesque blandit accumsan lobortis. Nam vel neque mattis, imperdiet felis in, finibus odio.</p>
-                                <span class="datetime">
-                                    Há 4 horas
-                                </span>
-                            </div>
-                        </div><!-- /.row -->
-                    </div>
+                    <?php
+                    foreach ($dados as $mostrar) { ?>
+                        <div class="box-noticias">
+                            <div class="row">
+                                <div class="col-md-4 mb-5 mb-md-0">
+                                    <a class="w-100" href=""><img class="img-noticias" src="../admin/noticias/img/<?= $mostrar['imagem'] ?>" alt=""></a>
+                                </div>
+                                <div class="col-md-8">
+                                    <a class="title-noticias" href="noticiaaberta.php?&id=<?= $mostrar['id'] ?>">
+                                        <h4 class="mb-3"><?= $mostrar['titulo'] ?></h4>
+                                    </a>
+                                    <p><?= $mostrar['subtitulo'] ?></p>
+                                    <span class="datetime">
+                                        <?php
+                                        echo '<p>' . getDateTimeDiff($mostrar['data']) . '</p>';
+                                        ?>
+                                    </span>
+                                </div>
+                            </div><!-- /.row -->
+                        </div>
+                    <?php }
+                    ?>
                 </section>
 
             </section>
@@ -90,7 +105,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 
-    <script>
+    <!-- <script>
         const URL =
             "https://gist.githubusercontent.com/prof3ssorSt3v3/1944e7ba7ffb62fe771c51764f7977a4/raw/c58a342ab149fbbb9bb19c94e278d64702833270/infinite.json";
         document.addEventListener("DOMContentLoaded", () => {
@@ -163,7 +178,7 @@
                     });
                 });
         }
-    </script>
+    </script> -->
 
 </body>
 

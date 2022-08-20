@@ -340,6 +340,7 @@ ol.breadcrumb::before {
   display: block;
   height: 1px;
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .title-noticias{

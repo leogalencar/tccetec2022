@@ -1,3 +1,9 @@
+<?php
+include_once '../class/Noticia.php';
+$noticia = new Noticia();
+$dados = $noticia->consultar();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -37,6 +43,8 @@
 <?php $title = 'Home'; ?>
 <?php $metaTags = 'tag1 tag2'; ?>
 <?php $currentPage = 'index.php'; ?>
+
+
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -291,54 +299,18 @@
                     <div class="row">
                         <div class="col-md-12">
                             <section class="center slider">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="../img/teste.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <?php
+                                foreach ($dados as $mostrar) { ?>
+                                    <div class="card d-flex flex-column" style="width: 18rem; height: 500px;">
+                                        <img src="../admin/noticias/img/<?= $mostrar['imagem'] ?>" class="card-img-top" alt="..." style="height: 200px;">
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title"><?= $mostrar['titulo'] ?></h5>
+                                            <p class="card-text"><?= $mostrar['subtitulo'] ?></p>
+                                            <a href="noticiaaberta.php?&id=<?= $mostrar['id'] ?>" class="btn btn-primary mt-auto align-self-lg-start">Ver mais</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img src="../img/teste.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img src="../img/teste.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img src="../img/teste.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img src="../img/teste.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img src="../img/teste.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
+                                <?php }
+                                ?>
                             </section>
                         </div>
                     </div>
