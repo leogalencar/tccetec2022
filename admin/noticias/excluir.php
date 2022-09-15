@@ -6,6 +6,7 @@ $noticia = new Noticia();
 $noticia->setId($id);
 $dados = $noticia->consultarPorID();
 
+
 foreach ($dados as $mostrar) {
     $titulo = $mostrar['titulo'];
     $subtitulo = $mostrar['subtitulo'];
@@ -13,11 +14,16 @@ foreach ($dados as $mostrar) {
     $imagem = $mostrar['imagem'];
 }
 
-if (!unlink("noticias/img/$imagem")) {
-    echo "Erro ao excluir imagem.";
-} else {
-    echo "Imagem excluída com sucesso.";
+$dir = "noticias/img/$imagem";
+
+if (file_exists($dir)) {
+    if (!unlink($dir)) {
+        echo "Erro ao excluir imagem.";
+    } else {
+        echo "Imagem excluída com sucesso.";
+    }
 }
+
 
 ?>
 <div class="alert alert-danger" role="alert">

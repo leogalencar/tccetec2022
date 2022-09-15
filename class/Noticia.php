@@ -84,6 +84,7 @@ class Noticia
             $sql->bindValue(':data', date('Y-m-d'), PDO::PARAM_STR);
             $sql->bindValue(':corpo', $this->corpo, PDO::PARAM_STR);
             $sql->bindValue(':imagem', $this->imagem, PDO::PARAM_STR);
+            
 
             if ($sql->execute() == 1) {
                 return "cadastrado";
@@ -118,7 +119,7 @@ class Noticia
     {
         try {
             $this->con = new Conectar();
-            $sql = $this->con->prepare("SELECT * FROM noticia");
+            $sql = $this->con->prepare("SELECT * FROM noticia ORDER BY id DESC");
 
             if ($sql->execute() == 1) {
                 return $sql->fetchAll();

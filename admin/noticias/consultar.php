@@ -28,22 +28,27 @@
                         $dados = $noticia->consultar();
 
                         foreach ($dados as $mostrar) {
+                            $id = $mostrar['id'];
+                            $titulo = $mostrar['titulo'];
+                            $subtitulo = $mostrar['subtitulo'];
+                            $data = $mostrar['data'];
+                            $imagem = $mostrar['imagem'];
                         ?>
                             <tr class="align-middle">
-                                <td><?= $mostrar['id'] ?></td>
-                                <td><?= $mostrar['titulo'] ?></td>
-                                <td class="w-25"><?= $mostrar['subtitulo'] ?></td>
-                                <td class="w-25"><?= $mostrar['data'] ?></td>
-                                <td class="w-25"><img class="w-100" height="100" src="noticias/img/<?= $mostrar['imagem'] ?>" alt=""></td>
+                                <td><?= $id ?></td>
+                                <td><?= $titulo ?></td>
+                                <td class="w-25"><?= $subtitulo ?></td>
+                                <td class="w-25"><?= $data ?></td>
+                                <td class="w-25"><img class="w-100" height="100" src="noticias/img/<?= $imagem ?>" alt=""></td>
                                 <td class="w-25 text-center">
-                                    <a href="?p=noticias/salvar&id=<?= $mostrar['id'] ?>" class="btn btn-primary ml-2">
+                                    <a href="?p=noticias/salvar&id=<?= $id ?>" class="btn btn-primary ml-2">
                                         <i class="bi bi-pencil-fill"></i>
                                     </a>
-                                    <a type="button" class="btn btn-danger ml-2" data-bs-toggle="modal" data-bs-target="#modalExcluir">
+                                    <a type="button" class="btn btn-danger ml-2" data-bs-toggle="modal" data-bs-target="#modalExcluir<?= $id ?>">
                                         <i class="bi bi-trash-fill"></i>
                                     </a>
 
-                                    <div class="modal fade" id="modalExcluir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal fade" id="modalExcluir<?= $id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
 
@@ -61,7 +66,7 @@
                                                 <!-- Modal footer -->
                                                 <div class="modal-footer">
                                                     <div class="col-md-3">
-                                                        <a class="nav-link w-100 p-0 pe-2" href="?p=noticias/excluir&id=<?= $mostrar['id'] ?>"><button type="button" class="btn btn-danger w-100" data-bs-dismiss="modal">Excluir</button></a>
+                                                        <a class="nav-link w-100 p-0 pe-2" href="?p=noticias/excluir&id=<?= $id ?>"><button type="button" class="btn btn-danger w-100" data-bs-dismiss="modal">Excluir</button></a>
                                                     </div>
 
                                                     <div class="col-md-3">

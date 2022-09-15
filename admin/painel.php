@@ -71,7 +71,7 @@ include('verificar_login.php');
                         <nav class="nav nav-pills flex-column justify-content-evenly text-center h-100">
                             <div class="row justify-content-center">
                                 <div class="col-md-4">
-                                    <img class="w-100 p-1" src="../img/teste.jpg" alt="">
+                                    <img class="w-100 p-1" src="../img/logo.png" alt="">
                                     <h7 class="text-light m-1"><?php echo $_SESSION['usuario']; ?></h7>
                                 </div>
                             </div>

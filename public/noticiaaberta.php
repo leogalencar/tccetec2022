@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
-
+        .conteudo a{
+            color: #dc3545 !important;
+        }
+        .conteudo a:hover{
+            color: #b40909 !important;
+        }
     </style>
 
 </head>
@@ -88,7 +93,7 @@ foreach ($dados as $mostrar) {
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <?php echo $corpo ?>
+                        <?php echo html_entity_decode($corpo); ?>
                     </div>
                 </div><!-- /.row -->
 
