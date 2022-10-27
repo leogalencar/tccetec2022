@@ -115,11 +115,23 @@ class Curso
         }
     }
 
-    function consultar()
+    function consultar($filtro_modalidade, $filtro_eixotec)
     {
         try {
             $this->con = new Conectar();
-            $sql = $this->con->prepare("SELECT * FROM curso ORDER BY id DESC");
+            if($filtro_modalidade == 0 && $filtro_eixotec == 0){
+                $sql = $this->con->prepare("SELECT * FROM curso ORDER BY titulo ASC");
+            }
+            else if($filtro_modalidade == 0){
+                $sql = $this->con->prepare("SELECT * FROM curso WHERE eixotec = '{$filtro_eixotec}' ORDER BY titulo ASC");
+            }
+            else if($filtro_eixotec == 0){
+                $sql = $this->con->prepare("SELECT * FROM curso WHERE modalidade = '{$filtro_modalidade}' ORDER BY titulo ASC");
+            }
+            else{
+                $sql = $this->con->prepare("SELECT * FROM curso WHERE modalidade = '{$filtro_modalidade}' and eixotec = '{$filtro_eixotec}' ORDER BY titulo ASC");
+            }
+            
 
             if ($sql->execute() == 1) {
                 return $sql->fetchAll();

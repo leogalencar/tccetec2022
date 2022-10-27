@@ -314,13 +314,21 @@ ol.breadcrumb::before {
   box-shadow: 0 0 10px 1px #767676;
 }
 
-.calendario-img {
+.calendario-img, .plano-escolar-pdf {
   max-width: 75%;
+}
+
+.plano-escolar-pdf{
+  width: 100%;
+  height: 80vh;
 }
 
 @media (max-width: 767.98px) {
   .calendario-img {
     max-width: 100%;
+  }
+  .plano-escolar-pdf{
+    display: none;
   }
   .box-download {
     max-width: 100% !important;

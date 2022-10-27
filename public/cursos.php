@@ -1,7 +1,8 @@
 <?php
 include_once '../class/Curso.php';
 $curso = new Curso();
-$dados = $curso->consultar();
+$modalidade = '';
+$eixotec = '';
 ?>
 
 <!DOCTYPE html>
@@ -64,19 +65,19 @@ $dados = $curso->consultar();
                 </section>
 
                 <div class="form bg-etec mb-5">
-                    <form action="">
+                    <form action="" method="POST">
                         <div class="row">
                             <div class="col-md-3">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected disabled>Modalidade - Período</option>
-                                    <option value="1">One</option>
+                                <select class="form-select" aria-label="Default select example" id="modalidade" name="modalidade">
+                                    <option value="0" selected disabled>Modalidade - Período</option>
+                                    <option value="MTEC - ENSINO MÉDIO COM HABILITAÇÃO TÉCNICA PROFISSIONAL">MTEC</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
                             </div>
                             <div class="col-md-3 mt-3 mt-md-0">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected disabled>Área (Eixo Tecnológico)</option>
+                                <select class="form-select" aria-label="Default select example" id="eixotec" name="eixotec">
+                                    <option value="0" selected disabled>Área (Eixo Tecnológico)</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -86,7 +87,7 @@ $dados = $curso->consultar();
                                 <input class="form-control" type="text" placeholder="Curso, período, área etc">
                             </div>
                             <div class="col-md-3 mt-3 mt-md-0 text-center">
-                                <button class="btn btn-danger" type="button">Pesquisar</button>
+                                <input type="submit" class="btn btn-danger" type="button" value="Pesquisar"></input>
                             </div>
                         </div>
                     </form>
@@ -95,6 +96,20 @@ $dados = $curso->consultar();
                 <!-- CARDS CURSOS !-->
                 <section id="cursos">
                     <?php
+
+                    if (empty($_POST['modalidade'])) {
+                        $modalidade = '0';
+                    } else {
+                        $modalidade = $_POST['modalidade'];
+                    }
+                    if (empty($_POST['eixotec'])) {
+                        $eixotec = '0';
+                    } else {
+                        $eixotec = $_POST['eixotec'];
+                    }
+
+                    $dados = $curso->consultar($modalidade, $eixotec);
+
                     foreach ($dados as $mostrar) { ?>
                         <div class="row text-center">
                             <div class="col-md-3 text-wk-center">
