@@ -76,7 +76,7 @@ include('verificar_login.php');
                                 </div>
                             </div>
                             <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'pagina-principal') ? ' active' : '') ?>" href="?p=pagina-principal">Página Inicial</a>
-                            <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'cursos') ? ' active' : '') ?>" href="?p=cursos">Cursos</a>
+                            <a class="nav-link nav-link-sidebar<?php echo ((strpos($actual_link, 'cursos') !== false) ? ' active' : '') ?>" href="?p=cursos/consultar">Cursos</a>
                             <a class="nav-link nav-link-sidebar<?php echo ((strpos($actual_link, "noticias") !== false) ? ' active' : '') ?>" href="?p=noticias/consultar">Notícias</a>
                             <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'calendario') ? ' active' : '') ?>" href="?p=calendario">Calendário</a>
                             <a type="button" class="nav-link nav-link-sidebar" data-bs-toggle="modal" data-bs-target="#myModal">

@@ -75,10 +75,32 @@ footer a {
 
 .img-cursos {
   border-radius: 50% !important;
-  width: 75% !important;
+  width: 100% !important;
+  padding: 2rem;
+  height: 20rem;
   align-self: center !important;
   margin-top: 1rem !important;
   /* padding: 30px !important; */
+}
+
+.card-text{
+  display: -webkit-box;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.card-cursos{
+  min-height: 26rem;
+  margin-bottom: 3rem;
+}
+
+.card-body-cursos {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  padding: 0 1rem 1rem 1rem !important;
 }
 
 .card-avaliacao {
@@ -343,54 +365,54 @@ ol.breadcrumb::before {
   margin-bottom: 32px;
 }
 
-.title-noticias{
+.title-noticias {
   color: red;
 }
 
-.title-noticias:hover{
+.title-noticias:hover {
   color: #b90000 !important;
 }
 
-.nav-link{
+.nav-link {
   color: rgb(223, 223, 223);
 }
 
-.nav-link:focus{
+.nav-link:focus {
   color: rgb(223, 223, 223);
 }
 
-.nav-link-cal{
+.nav-link-cal {
   color: #dc3545;
 }
 
-.nav-link-cal:hover{
+.nav-link-cal:hover {
   color: #b40909;
 }
 
-.nav-link-cal:focus{
+.nav-link-cal:focus {
   color: #b40909;
 }
 
-.nav-link-sidebar{
+.nav-link-sidebar {
   font-size: 20px;
   width: 75%;
   align-self: center;
 }
 
-.nav-link-sidebar:hover{
+.nav-link-sidebar:hover {
   background-color: #00000017;
 }
 
-.form{
+.form {
   padding: 10px;
   border-radius: 10px;
 }
 
-.form select{
+.form select {
   width: 100%;
 }
 
-.form-login{
+.form-login {
   background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 20px;

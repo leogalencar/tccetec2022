@@ -1,3 +1,9 @@
+<?php
+include_once '../class/Curso.php';
+$curso = new Curso();
+$dados = $curso->consultar();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -62,7 +68,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>Modalidade - Período</option>
+                                    <option selected disabled>Modalidade - Período</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -70,7 +76,7 @@
                             </div>
                             <div class="col-md-3 mt-3 mt-md-0">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>Área (Eixo Tecnológico)</option>
+                                    <option selected disabled>Área (Eixo Tecnológico)</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -88,82 +94,20 @@
 
                 <!-- CARDS CURSOS !-->
                 <section id="cursos">
-                    <div class="row text-center">
-                        <div class="col-md-3 text-wk-center">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
+                    <?php
+                    foreach ($dados as $mostrar) { ?>
+                        <div class="row text-center">
+                            <div class="col-md-3 text-wk-center">
+                                <div class="card card-cursos">
+                                    <img class="card-img-top img-cursos" src="../admin/cursos/img/<?= $mostrar['imagem'] ?>" alt="Imagem de capa do card">
+                                    <div class="card-body card-body-cursos">
+                                        <h4 class="card-title"><?= $mostrar['titulo'] ?></h4>
+                                        <p class="mt-4"><a href="cursoaberto.php?&id=<?= $mostrar['id'] ?>" class="btn btn-outline-dark">Ver mais</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-md-4 mb-padrao text-center">
-                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-wk-center mt-5 mt-md-0">
-                            <div class="card">
-                                <img class="card-img-top img-cursos" src="../img/Vestibulinho2020.png" alt="Imagem de capa do card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Desenvolvimento de Sistemas</h4>
-                                    <p class="mt-4"><a href="#" class="btn btn-outline-dark">Ver mais</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </section>
 
             </section>
