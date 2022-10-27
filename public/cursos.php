@@ -108,7 +108,7 @@ $eixotec = '';
                         $eixotec = $_POST['eixotec'];
                     }
 
-                    $dados = $curso->consultar($modalidade, $eixotec);
+                    $dados = $curso->consultarPorNome($modalidade, $eixotec);
 
                     foreach ($dados as $mostrar) { ?>
                         <div class="row text-center">
@@ -127,6 +127,7 @@ $eixotec = '';
 
             </section>
         </div>
+    </main>
 
 
         <!-- FOOTER !-->

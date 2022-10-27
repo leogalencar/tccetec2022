@@ -115,7 +115,23 @@ class Curso
         }
     }
 
-    function consultar($filtro_modalidade, $filtro_eixotec)
+    function consultar()
+    {
+        try {
+            $this->con = new Conectar();
+            $sql = $this->con->prepare("SELECT * FROM curso ORDER BY id DESC");
+
+            if ($sql->execute() == 1) {
+                return $sql->fetchAll();
+            } else {
+                return false;
+            }
+        } catch (PDOException $exc) {
+            echo "Erro ao consultar " . $exc->getMessage();
+        }
+    }
+
+    function consultarPorNome($filtro_modalidade, $filtro_eixotec)
     {
         try {
             $this->con = new Conectar();
