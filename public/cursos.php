@@ -84,7 +84,7 @@ $eixotec = '';
                                 </select>
                             </div>
                             <div class="col-md-3 mt-3 mt-md-0">
-                                <input class="form-control" type="text" placeholder="Curso, período, área etc">
+                                <input id="inputPesquisar" class="form-control" type="text" onkeyup="cardPesquisar()" placeholder="Curso, período, área etc">
                             </div>
                             <div class="col-md-3 mt-3 mt-md-0 text-center">
                                 <input type="submit" class="btn btn-danger" type="button" value="Pesquisar"></input>
@@ -112,7 +112,7 @@ $eixotec = '';
 
                     foreach ($dados as $mostrar) { ?>
                         <div class="row text-center">
-                            <div class="col-md-3 text-wk-center">
+                            <div class="col-md-3 text-wk-center cardCursos">
                                 <div class="card card-cursos">
                                     <img class="card-img-top img-cursos" src="../admin/cursos/img/<?= $mostrar['imagem'] ?>" alt="Imagem de capa do card">
                                     <div class="card-body card-body-cursos">
@@ -130,14 +130,37 @@ $eixotec = '';
     </main>
 
 
-        <!-- FOOTER !-->
-        <?php include_once 'footer.php' ?>
+    <!-- FOOTER !-->
+    <?php include_once 'footer.php' ?>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        function cardPesquisar() {
+            // Declare variables
+            var input, filter, table, h4, card, i, txtValue;
+            input = document.getElementById("inputPesquisar");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("cursos");
+            h4 = table.getElementsByClassName("cardCursos");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < h4.length; i++) {
+                card = h4[i].getElementsByTagName("h4")[0];
+                if (card) {
+                    txtValue = card.textContent || card.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        h4[i].style.display = "";
+                    } else {
+                        h4[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
 
 </body>
 
