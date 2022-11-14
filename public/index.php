@@ -306,7 +306,7 @@ $dados = $noticia->consultar();
                                         <div class="card-body d-flex flex-column">
                                             <h5 class="card-title"><?= $mostrar['titulo'] ?></h5>
                                             <p class="card-text"><?= $mostrar['subtitulo'] ?></p>
-                                            <a href="noticiaaberta.php?&id=<?= $mostrar['id'] ?>" class="btn btn-primary mt-auto align-self-lg-start">Ver mais</a>
+                                            <a href="noticiaaberta.php?&id=<?= $mostrar['id'] ?>" class="btn btn-danger mt-auto align-self-lg-start">Ver mais</a>
                                         </div>
                                     </div>
                                 <?php }

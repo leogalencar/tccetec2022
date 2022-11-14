@@ -62,8 +62,8 @@
                         <nav>
                             <div class="nav nav-tabs mb-5" id="nav-tab" role="tablist">
                                 <button class="nav-link nav-link-cal active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">2021-2025</button>
-                                <button class="nav-link nav-link-cal" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">2022 (Extensão 1)</button>
-                                <button class="nav-link nav-link-cal" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">2022 (Extensão 2)</button>
+                                <button class="nav-link nav-link-cal disabled" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">2016-2020</button>
+                                <button class="nav-link nav-link-cal disabled" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">2011-2015</button>
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
@@ -83,13 +83,10 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                                B
+                                Não fornecido.
                             </div>
                             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                                C
-                            </div>
-                            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
-                                D
+                                Não fornecido.
                             </div>
                         </div>
                     </div>

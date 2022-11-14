@@ -53,24 +53,94 @@
                 <section class="title mb-5">
                     <h1 class="title-section mb-3">Vestibulinho</h1>
                     <h5 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        O vestibulinho ETEC é um processo seletivo que seleciona os candidatos para a entrada nas ETECs.
                     </h5>
                 </section>
 
+                <div class="row mb-5">
+                    <a class="title-noticias" href="https://www.vestibulinhoetec.com.br/home/" target="_blank">
+                        
+                        <div class="col-12 text-center">
+                            <img src="../img/bannervestibulinho.png" alt="">
+                        </div>
+                        <div class="col-md-12 text-center mt-2">
+                            <button class="btn btn-danger w-25">Faça já sua inscrição aqui!</button>
+                        </div>
+                    </a>
+                </div>
                 <div class="row">
                     <div class="col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in faucibus quam. Ut sollicitudin quam tristique tortor tristique accumsan. Aenean facilisis lorem nec nulla imperdiet aliquet. Fusce eget enim ut nibh egestas imperdiet et nec diam. Duis mattis consequat risus ac blandit. Aliquam ultrices metus porta feugiat luctus. Etiam sed tortor varius, porttitor ante nec, sagittis tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras condimentum sem in dui feugiat malesuada.
-
-                        Duis vulputate neque ut hendrerit hendrerit. Aenean metus arcu, aliquet eget auctor porttitor, elementum ac lorem. Sed mauris nisl, ullamcorper dignissim ante at, sodales suscipit neque. Donec convallis feugiat porttitor. Nunc eu ornare enim. Morbi eu mattis mi, id ultrices ante. Pellentesque eget metus sapien. Donec commodo, nunc id egestas consectetur, turpis justo mattis velit, quis lacinia quam diam at elit. Pellentesque ex sapien, tincidunt a velit non, consequat accumsan felis. Praesent lacinia, diam eleifend iaculis pulvinar, risus sapien dignissim enim, ut ornare orci sapien sed lacus. Donec vel felis elit. Vivamus finibus lorem et commodo commodo.
-
-                        Donec eget euismod odio. Donec a gravida ligula. Cras faucibus laoreet est, placerat laoreet tortor convallis vitae. Praesent tristique tellus urna, eget luctus purus ullamcorper non. Curabitur mauris elit, venenatis sit amet nisl eu, aliquet fermentum ex. Morbi id nunc et nulla sodales luctus eu vitae odio. Proin vulputate sollicitudin dolor eu tempor. Nulla lacinia neque velit, in accumsan justo pharetra non. In vitae enim ligula. Nulla facilisi. Ut sodales sed est et dictum. Vivamus id sollicitudin urna.
-
-                        Cras id tortor at ex euismod mattis ac et nisl. Proin imperdiet tellus eget massa feugiat, at placerat orci gravida. Aenean a imperdiet tortor, lacinia pretium magna. Nam convallis, elit vel interdum placerat, sem dolor molestie turpis, at pretium ante purus ac nisi. Fusce porta volutpat auctor. Morbi nisi lectus, ullamcorper quis metus in, posuere commodo quam. Vivamus sapien ante, tristique ut tellus ac, blandit suscipit felis. Aliquam posuere efficitur velit commodo aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-                        Sed ut congue sem. Pellentesque ultricies egestas dapibus. Maecenas eu lectus faucibus risus tempor laoreet. Duis efficitur dolor eu ante venenatis posuere. Vivamus nec iaculis ante. In enim est, facilisis a gravida et, sollicitudin ac mauris. Morbi finibus elementum quam, ac pharetra tellus gravida eu. Curabitur lobortis mollis leo eu lacinia. Nunc cursus diam convallis libero fringilla, ac pellentesque lorem sodales. Praesent semper dapibus quam, sit amet faucibus nisl imperdiet ac. Etiam pharetra turpis tincidunt tortor dictum faucibus. Sed non enim aliquet, cursus est non, condimentum dui. Cras et tristique mauris, a consequat enim. Sed pellentesque neque quis ex egestas cursus.
+                        <h5>Dúvidas Frequentes:</h5>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Quais os requisitos para poder disputar uma vaga em algum curso?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>No geral, basta ter concluído o Ensino Fundamental </strong>, sendo necessário apresentar o certificado de conclusão do Ensino Fundamental ou uma Declaração de Conclusão assinada por um agente escolar da escola onde o aluno concluiu o fundamental.<br><br>
+                                        <strong>Demais casos:</strong>
+                                        <ol>
+                                            <li>Quem já concluiu o Ensino Médio ou está cursando: o primeiro deve possuir o Certificado de Conclusão do Ensino Médio e o segundo deve apresentar uma declaração de que está matriculado no Ensino Médio (a partir da 2º série);</li>
+                                            <li>Quem está cursando EJA ou ENCCEJA: Possuir o Certificado de Conclusão do Ensino Médio ou declaração que está matriculado a partir do 2º termo do EJA, ou 2 certificados de aprovação em áreas de estudos da EJA/CEEJA, ou Boletim de aprovação do ENCCEJA enviado pelo MEC, ou Certificado de aprovação do ENCCEJA em 2 áreas de estudos avaliadas.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Existe idade mínima para fazer os cursos técnicos?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Apenas para alguns cursos, sendo eles: o Curso Técnico em Enfermagem, o Curso Técnico em Cuidados de Idosos e o Curso Técnico em Serviços de Restaurante e Bar requerem que o aluno tenha a idade mínima de 18 anos. É importante lembrar que nem todos os cursos estão disponíveis em determinada instituição, logo é necessário que o candidato entre em contato com a ETEC escolhida para mais informações.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Onde realizo a inscrição?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A inscrição do Vestibulinho ETEC é feita pelo site oficial do vestibulinho: <a class="title-noticias" href="https://www.vestibulinhoetec.com.br/home/" target="_blank">https://www.vestibulinhoetec.com.br/home/</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Como é a prova?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        O vestibulinho é composto de 40 questões, cada uma contendo cinco alternativas (de A a E), sendo apenas uma correta. A prova leva em conta as competências e habilidades previstas na Base Nacional Comum (BNCC) do Ensino Fundamental II, abarcando conteúdos de Linguagens (Português), Matemática, de Ciências Humanas (Geografia e História) e de Ciências da Natureza que já foram apresentados aos alunos.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Como é a classificação para os cursos?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A nota final é obtida a partir do total de questões acertadas pelo candidato. A nota final é relacionada com o número de vagas disponíveis para o curso desejado. Por exemplo, para um curso que tenha 35 vagas, serão selecionados aqueles que obtiveram uma nota final mais alta que os demais participantes, ocupando assim as 35 primeiras posições.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div><!-- /.row -->
-                
+
             </section>
 
         </div>
