@@ -11,6 +11,8 @@ class Curso
     private $eixotec;
     private $corpo;
     private $imagem;
+    private $planocurso;
+    private $matriz;
     private $con;
 
     function getId()
@@ -43,6 +45,16 @@ class Curso
         return $this->imagem;
     }
 
+    function getPlanoCurso()
+    {
+        return $this->planocurso;
+    }
+
+    function getMatriz()
+    {
+        return $this->matriz;
+    }
+
     function setId($id)
     {
         $this->id = $id;
@@ -73,17 +85,29 @@ class Curso
         $this->imagem = $imagem;
     }
 
+    function setPlanoCurso($planocurso)
+    {
+        $this->planocurso = $planocurso;
+    }
+
+    function setMatriz($matriz)
+    {
+        $this->matriz = $matriz;
+    }
+
     function salvar()
     {
         try {
             $this->con = new Conectar();
-            $sql = $this->con->prepare("CALL salvar_curso(:id, :titulo, :modalidade, :eixotec, :corpo, :imagem)");
+            $sql = $this->con->prepare("CALL salvar_curso(:id, :titulo, :modalidade, :eixotec, :corpo, :imagem, :planocurso, :matriz)");
             $sql->bindValue(':id', $this->id, PDO::PARAM_INT);
             $sql->bindValue(':titulo', $this->titulo, PDO::PARAM_STR);
             $sql->bindValue(':modalidade', $this->modalidade, PDO::PARAM_STR);
             $sql->bindValue(':eixotec', $this->eixotec, PDO::PARAM_STR);
             $sql->bindValue(':corpo', $this->corpo, PDO::PARAM_STR);
             $sql->bindValue(':imagem', $this->imagem, PDO::PARAM_STR);
+            $sql->bindValue(':planocurso', $this->planocurso, PDO::PARAM_STR);
+            $sql->bindValue(':matriz', $this->matriz, PDO::PARAM_STR);
             
 
             if ($sql->execute() == 1) {

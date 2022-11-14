@@ -96,6 +96,10 @@ footer a {
   margin-bottom: 3rem;
 }
 
+.card-title-cursos{
+  height: 4rem;
+}
+
 .card-body-cursos {
   justify-content: space-between;
   flex-direction: column;

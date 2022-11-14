@@ -95,34 +95,35 @@ $eixotec = '';
 
                 <!-- CARDS CURSOS !-->
                 <section id="cursos">
-                    <?php
+                    <div class="row text-center">
+                        <?php
 
-                    if (empty($_POST['modalidade'])) {
-                        $modalidade = '0';
-                    } else {
-                        $modalidade = $_POST['modalidade'];
-                    }
-                    if (empty($_POST['eixotec'])) {
-                        $eixotec = '0';
-                    } else {
-                        $eixotec = $_POST['eixotec'];
-                    }
+                        if (empty($_POST['modalidade'])) {
+                            $modalidade = '0';
+                        } else {
+                            $modalidade = $_POST['modalidade'];
+                        }
+                        if (empty($_POST['eixotec'])) {
+                            $eixotec = '0';
+                        } else {
+                            $eixotec = $_POST['eixotec'];
+                        }
 
-                    $dados = $curso->consultarPorNome($modalidade, $eixotec);
+                        $dados = $curso->consultarPorNome($modalidade, $eixotec);
 
-                    foreach ($dados as $mostrar) { ?>
-                        <div class="row text-center">
+                        foreach ($dados as $mostrar) { ?>
+
                             <div class="col-md-3 text-wk-center cardCursos">
                                 <div class="card card-cursos">
                                     <img class="card-img-top img-cursos" src="../admin/cursos/img/<?= $mostrar['imagem'] ?>" alt="Imagem de capa do card">
                                     <div class="card-body card-body-cursos">
-                                        <h4 class="card-title"><?= $mostrar['titulo'] ?></h4>
+                                        <h4 class="card-title card-title-cursos"><?= $mostrar['titulo'] ?></h4>
+                                        <p class="mt-1" style="font-size: 12px;"><?= $mostrar['modalidade'] ?></p>
                                         <p class="mt-4"><a href="cursoaberto.php?&id=<?= $mostrar['id'] ?>" class="btn btn-outline-dark">Ver mais</a></p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    <?php } ?>
+                            </div> <?php } ?>
+                    </div>
                 </section>
 
             </section>

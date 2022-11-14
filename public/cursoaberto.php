@@ -25,10 +25,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
-        .conteudo a{
+        .conteudo a {
             color: #dc3545 !important;
         }
-        .conteudo a:hover{
+
+        .conteudo a:hover {
             color: #b40909 !important;
         }
     </style>
@@ -53,6 +54,8 @@ foreach ($dados as $mostrar) {
     $eixotec = $mostrar['eixotec'];
     $corpo = $mostrar['corpo'];
     $imagem = $mostrar['imagem'];
+    $planocurso = $mostrar['planocurso'];
+    $matriz = $mostrar['matriz'];
 }
 ?>
 
@@ -79,6 +82,14 @@ foreach ($dados as $mostrar) {
                         <?php echo $modalidade ?>
                     </h5>
                     <span><?php echo $eixotec ?></span>
+                    <div class="row mt-2">
+                        <div class="col-md-2">
+                            <a class="w-100" href="../admin/cursos/matrizcurricular/<?php echo $matriz ?>" target="_blank"><button class="btn btn-outline-dark w-100">Matriz Curricular</button></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="w-100" href="../admin/cursos/planocurso/<?php echo $planocurso ?>" target="_blank"><button class="btn btn-outline-dark w-100">Plano de Curso</button></a>
+                        </div>
+                    </div>
                 </section>
 
                 <div class="row mb-5">
