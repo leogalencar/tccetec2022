@@ -1,3 +1,5 @@
+<?php include('verificar_login.php'); ?>
+
 <?php
 include_once '../class/Noticia.php';
 $noticia = new Noticia();

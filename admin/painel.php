@@ -1,8 +1,4 @@
-<?php
-
-include('verificar_login.php');
-
-?>
+<?php include('verificar_login.php'); ?>
 
 <!DOCTYPE html>
 <html>
