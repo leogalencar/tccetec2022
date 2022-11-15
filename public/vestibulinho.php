@@ -61,10 +61,10 @@
                     <a class="title-noticias" href="https://www.vestibulinhoetec.com.br/home/" target="_blank">
                         
                         <div class="col-12 text-center">
-                            <img src="../img/bannervestibulinho.png" alt="">
+                            <img class="w-100" src="../img/bannervestibulinho.png" alt="">
                         </div>
                         <div class="col-md-12 text-center mt-2">
-                            <button class="btn btn-danger w-25">Faça já sua inscrição aqui!</button>
+                            <button class="btn btn-danger w-auto">Faça já sua inscrição aqui!</button>
                         </div>
                     </a>
                 </div>
