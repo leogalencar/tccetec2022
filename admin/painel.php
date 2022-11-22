@@ -74,7 +74,7 @@
                             <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'pagina-principal') ? ' active' : '') ?>" href="?p=pagina-principal">Página Inicial</a>
                             <a class="nav-link nav-link-sidebar<?php echo ((strpos($actual_link, 'cursos') !== false) ? ' active' : '') ?>" href="?p=cursos/consultar">Cursos</a>
                             <a class="nav-link nav-link-sidebar<?php echo ((strpos($actual_link, "noticias") !== false) ? ' active' : '') ?>" href="?p=noticias/consultar">Notícias</a>
-                            <a class="nav-link nav-link-sidebar<?php echo (($actual_link == 'calendario') ? ' active' : '') ?>" href="?p=calendario">Calendário</a>
+                            <a class="nav-link nav-link-sidebar<?php echo ((strpos($actual_link, "processoseletivo") !== false) ? ' active' : '') ?>" href="?p=processoseletivo/consultar">Processo Seletivo</a>
                             <a type="button" class="nav-link nav-link-sidebar" data-bs-toggle="modal" data-bs-target="#myModal">
                                 Sair
                             </a>
