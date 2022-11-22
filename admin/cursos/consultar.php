@@ -1,4 +1,4 @@
-<?php include('verificar_login.php'); ?>
+
 
 <div class="col-md-8 border-start-0 border-md-start ps-4 mt-4 mt-lg-0">
     <div data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">

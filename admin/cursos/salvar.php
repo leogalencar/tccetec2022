@@ -1,4 +1,4 @@
-<?php include('verificar_login.php'); ?>
+
 
 <?php
 include_once '../class/Curso.php';
