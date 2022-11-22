@@ -96,25 +96,22 @@ $dados = $noticia->consultar();
             <div class="container marketing mb-padrao">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="../img/cadeado.png" width="140" height="140" alt="">
+                        <img src="../img/cadeado.png" height="140" alt="">
 
                         <h2>NSA</h2>
-                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                        <p>Oferecemos um portal para o aluno com segurança efetiva e muitas funcionalidades.</p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img src="../img/teams.png" width="140" height="140" alt="">
+                        <img src="../img/microsoftoffice.png" height="140" alt="">
 
-                        <h2>Microsoft Teams</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                        <h2>Pacote Office 365</h2>
+                        <p>Aqui você tem acesso a todos os programas essenciais da Microsoft.</p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
+                        <img src="../img/github.png" height="140" alt="">
 
-                        <h2>a</h2>
-                        <p>And lastly this, the third column of representative placeholder content.</p>
+                        <h2>GitHub Pro</h2>
+                        <p>Você pode usar o e-mail institucional que oferecemos para garantir acesso gratuito ao GitHub Pro.</p>
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
             </div>
@@ -128,8 +125,8 @@ $dados = $noticia->consultar();
                         Temos um compromisso com a formação de nossos alunos, portanto, oferecemos cursos atualizados e que abrem espaço para que os estudantes desenvolvam suas habilidades. Entendemos que o ensino vai muito além da teoria, sendo assim, oferecemos recursos e tecnologias para que os estudantes desenvolvam habilidades práticas, possibilitando um <b class="fw-bold">melhor aprendizado</b>.
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img src="https://colegioprudente.com.br/novo/wp-content/uploads/2021/12/home-info3.jpg" alt="" style="max-width: 100%;">
+                <div class="col-md-5 rounded" style="overflow: hidden; text-align: center;">
+                    <div style="background-image: url('../img/homeetec2.jpg'); margin-top: -666px; text-align: center; height: 1600px;"></div>
                 </div>
             </div>
 
