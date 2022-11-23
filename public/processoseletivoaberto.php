@@ -1,9 +1,3 @@
-<?php
-include_once '../class/ProcessoSeletivo.php';
-$processoseletivo = new ProcessoSeletivo();
-$dados = $processoseletivo->consultar();
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -31,7 +25,7 @@ $dados = $processoseletivo->consultar();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
-
+        
     </style>
 
 </head>
@@ -39,6 +33,24 @@ $dados = $processoseletivo->consultar();
 <?php $title = 'Processo Seletivo'; ?>
 <?php $metaTags = 'tag1 tag2'; ?>
 <?php $currentPage = 'processoseletivo.php'; ?>
+
+<?php
+include_once '../class/ProcessoSeletivo.php';
+
+$id = filter_input(INPUT_GET, 'id');
+$processoseletivo = new ProcessoSeletivo();
+$processoseletivo->setId($id);
+$dados = $processoseletivo->consultarPorID();
+
+foreach ($dados as $mostrar) {
+    $titulo = $mostrar['titulo'];
+    $unidade = $mostrar['unidade'];
+    $data = $mostrar['data'];
+    $corpo = $mostrar['corpo'];
+    $imagem = $mostrar['imagem'];
+    $arquivos = $mostrar['arquivos'];
+}
+?>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -50,36 +62,40 @@ $dados = $processoseletivo->consultar();
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-5" breadcrumb-msg="Você está em:">
                     <li class="breadcrumb-item"><a href="index.php" class="breadcrumb-link">Página Inicial</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Processo Seletivo</li>
+                    <li class="breadcrumb-item"><a href="processoseletivo.php" class="breadcrumb-link">Processo Seletivo</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?php echo $titulo ?></li>
                 </ol>
             </nav>
 
             <section class="conteudo">
 
                 <section class="title mb-5">
-                    <h1 class="title-section mb-3">Processo Seletivo</h1>
+                    <h1 class="title-section mb-3 text-uppercase"><?php echo $titulo ?></h1>
                     <h5 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <?php echo $data ?>
                     </h5>
+                    <span><?php echo $unidade ?></span>
                 </section>
 
-                <section id="cursos">
-                    <div class="row text-center">
-                        <?php
-                        foreach ($dados as $mostrar) { ?>
-
-                            <div class="col-md-3 text-wk-center cardCursos">
-                                <div class="card card-cursos">
-                                    <img class="card-img-top img-processoseletivo" src="../admin/processoseletivo/img/<?= $mostrar['imagem'] ?>" alt="Imagem de capa do card">
-                                    <div class="card-body card-body-cursos">
-                                        <h4 class="card-title card-title-cursos"><?= $mostrar['titulo'] ?></h4>
-                                        <p class="mt-1" style="font-size: 14px;"><?= $mostrar['data'] ?></p>
-                                        <p class="mt-4"><a href="processoseletivoaberto.php?&id=<?= $mostrar['id'] ?>" class="btn btn-outline-dark">Ver mais</a></p>
-                                    </div>
-                                </div>
-                            </div> <?php } ?>
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <div class="noticias-img">
+                            <img class="w-50" src="../admin/processoseletivo/img/<?php echo $imagem ?>" alt="">
+                        </div>
+                        <div class="noticias-img-legenda">
+                            <span>Cras condimentum sem in dui feugiat malesuada — Foto: Reprodução / Etec Martinho di Ciero</span>
+                        </div>
                     </div>
-                </section>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <?php echo html_entity_decode($corpo); ?>
+                    </div>
+                    <div class="col-12">
+                        <h5 class="mb-4">Arquivos:</h5>
+                        <a href="../admin/processoseletivo/arquivos/<?php echo $arquivos ?>" target="_blank" class="btn btn-outline-dark"><?php echo $arquivos ?></a>
+                    </div>
+                </div><!-- /.row -->
 
             </section>
 

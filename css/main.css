@@ -83,20 +83,27 @@ footer a {
   /* padding: 30px !important; */
 }
 
-.card-text{
-  display: -webkit-box;
-   -webkit-line-clamp: 4;
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-   text-overflow: ellipsis;
+.img-processoseletivo {
+  width: 100% !important;
+  padding: 0 0 2rem;
+  height: 20rem;
+  align-self: center !important;
 }
 
-.card-cursos{
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-cursos {
   min-height: 26rem;
   margin-bottom: 3rem;
 }
 
-.card-title-cursos{
+.card-title-cursos {
   height: 4rem;
 }
 
@@ -318,11 +325,12 @@ ol.breadcrumb::before {
   box-shadow: 0 0 10px 1px #767676;
 }
 
-.calendario-img, .plano-escolar-pdf {
+.calendario-img,
+.plano-escolar-pdf {
   max-width: 75%;
 }
 
-.plano-escolar-pdf{
+.plano-escolar-pdf {
   width: 100%;
   height: 80vh;
 }
@@ -331,7 +339,7 @@ ol.breadcrumb::before {
   .calendario-img {
     max-width: 100%;
   }
-  .plano-escolar-pdf{
+  .plano-escolar-pdf {
     display: none;
   }
   .box-download {
