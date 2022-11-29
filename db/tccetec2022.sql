@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22-Nov-2022 às 22:34
+-- Tempo de geração: 23-Nov-2022 às 03:29
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 8.0.2
 
@@ -67,6 +67,27 @@ BEGIN
     END IF;
 END$$
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `salvar_processoseletivo` (IN `var_id` INT, IN `var_titulo` VARCHAR(100), IN `var_unidade` VARCHAR(200), IN `var_data` DATE, IN `var_corpo` VARCHAR(5000), IN `var_imagem` VARCHAR(100), IN `var_arquivos` VARCHAR(1000))  NO SQL
+BEGIN
+    DECLARE id_processoseletivo int;
+    SET id_processoseletivo = (SELECT id FROM processoseletivo WHERE id = var_id);
+   
+    IF (id_processoseletivo > 0) THEN
+        UPDATE processoseletivo SET 
+        	titulo = var_titulo,
+            unidade = var_unidade,
+        	data = data, 
+        	corpo = var_corpo,
+        	imagem = var_imagem,
+            arquivos = var_arquivos
+        WHERE id = var_id;
+        COMMIT;
+    ELSE
+        INSERT INTO processoseletivo VALUES(var_id, var_titulo, var_unidade, var_data, var_corpo, var_imagem, var_arquivos);
+        COMMIT;
+    END IF;
+END$$
+
 DELIMITER ;
 
 -- --------------------------------------------------------
@@ -125,6 +146,30 @@ INSERT INTO `noticia` (`id`, `titulo`, `subtitulo`, `data`, `corpo`, `imagem`) V
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `processoseletivo`
+--
+
+CREATE TABLE `processoseletivo` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(100) NOT NULL,
+  `unidade` varchar(200) NOT NULL,
+  `data` date NOT NULL,
+  `corpo` varchar(5000) NOT NULL,
+  `imagem` varchar(100) DEFAULT NULL,
+  `arquivos` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `processoseletivo`
+--
+
+INSERT INTO `processoseletivo` (`id`, `titulo`, `unidade`, `data`, `corpo`, `imagem`, `arquivos`) VALUES
+(5, 'RES. PROVA ESCRITA 086-01-2022', 'Etec Itu (sede)', '2022-11-23', '&lt;p&gt;A Comiss&amp;atilde;o Especial de Concurso P&amp;uacute;blico da ESCOLA T&amp;Eacute;CNICA ESTADUAL MARTINHO DI CIERO comunica aos candidatos abaixo relacionados o resultado da Prova Escrita.&amp;nbsp;&lt;br /&gt;\r\nO presente resultado j&amp;aacute; considera, no c&amp;aacute;lculo da pontua&amp;ccedil;&amp;atilde;o para candidatos que se declararam como pretos, pardos ou ind&amp;iacute;genas e manifestaram interesse em utilizar a pontua&amp;ccedil;&amp;atilde;o diferenciada a que alude o Decreto n&amp;ordm; 63.979/2018, a f&amp;oacute;rmula de c&amp;aacute;lculo prevista no mencionado Decreto, bem como no Cap&amp;iacute;tulo VIII do Edital de Abertura de Inscri&amp;ccedil;&amp;otilde;es.&amp;nbsp;&lt;/p&gt;', 'IMG-637d60ac6400f2.50162903.png', 'PDF-processoseletivopdf.pdf'),
+(6, 'GABARITO BIOLOGIA 086-01-2022', 'Etec Itu (sede)', '2022-11-23', '&lt;p&gt;&lt;strong&gt;CONCURSO P&amp;Uacute;BLICO PARA PROFESSOR DE ENSINO M&amp;Eacute;DIO E T&amp;Eacute;CNICO N&amp;ordm; 086/01/2022 &amp;ndash; PROCESSO N&amp;ordm; 2022/33570&lt;/strong&gt;&amp;nbsp;Componente curricular (habilita&amp;ccedil;&amp;atilde;o): Biologia (BNCC/ ETIM / MTec / EM com &amp;Ecirc;nfases)(ENSINO M&amp;Eacute;DIO (BNCC/ ETIM/ MTEC/ EM COM &amp;Ecirc;NFASES/ ITINER&amp;Aacute;RIOS FORMATIVOS/ PD))&amp;nbsp;&lt;strong&gt;GABARITO OFICIAL &amp;ndash; PROVA ESCRITA &amp;ndash; 10/11/2022&lt;/strong&gt;&lt;/p&gt;', 'IMG-637d60a1ea1e44.74530803.png', 'PDF-processoseletivopdf2.pdf');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuario`
 --
 
@@ -158,6 +203,12 @@ ALTER TABLE `noticia`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `processoseletivo`
+--
+ALTER TABLE `processoseletivo`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `usuario`
 --
 ALTER TABLE `usuario`
@@ -178,6 +229,12 @@ ALTER TABLE `curso`
 --
 ALTER TABLE `noticia`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
+
+--
+-- AUTO_INCREMENT de tabela `processoseletivo`
+--
+ALTER TABLE `processoseletivo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
