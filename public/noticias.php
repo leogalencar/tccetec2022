@@ -62,7 +62,7 @@ $dados = $noticia->consultar();
                 <section class="title mb-5">
                     <h1 class="title-section mb-3">Notícias</h1>
                     <h5 class="subtitle mb-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Confira as últimas notícias da ETEC Martinho di Ciero.
                     </h5>
                 </section>
 

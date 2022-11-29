@@ -53,7 +53,7 @@
                 <section class="title mb-5">
                     <h1 class="title-section mb-3">Calendário</h1>
                     <h5 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Confira o calendário de eventos da ETEC Martinho di Ciero.
                     </h5>
                 </section>
 

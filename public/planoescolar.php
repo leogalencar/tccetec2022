@@ -53,7 +53,7 @@
                 <section class="title mb-5">
                     <h1 class="title-section mb-3">Plano Escolar</h1>
                     <h5 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        O Plano Escolar é um documento que estabelece as diretrizes para a organização e o funcionamento da escola, e que deve ser elaborado a cada quatro anos, em consonância com o Plano Nacional de Educação (PNE) e o Plano Estadual de Educação (PEE). O Plano Escolar deve ser elaborado em conjunto com a comunidade escolar, com a participação dos pais, dos alunos, dos professores, dos funcionários e da comunidade local.
                     </h5>
                 </section>
 

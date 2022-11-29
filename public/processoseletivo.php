@@ -59,7 +59,7 @@ $dados = $processoseletivo->consultar();
                 <section class="title mb-5">
                     <h1 class="title-section mb-3">Processo Seletivo</h1>
                     <h5 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        A porta de entrada para o corpo docente do Centro Paula Souza.
                     </h5>
                 </section>
 

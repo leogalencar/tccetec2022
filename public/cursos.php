@@ -60,7 +60,7 @@ $eixotec = '';
                 <section class="title mb-5">
                     <h1 class="title-section mb-3">Cursos</h1>
                     <h5 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cursos que a nossa Etec oferece de forma gratuita e com qualidade.
                     </h5>
                 </section>
 
